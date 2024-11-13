@@ -41,12 +41,12 @@ def want_add_expenses(self, amount: float, category: str):
         """
     
 def need_expenses
-    """Adds essential expenses to a list of necessary spending. Used to track money spent on necessities, such as food, utilities, or housing.
+    """Adds essential expenses to a list of necessary spending. Used to track money spent on necessities, such as food, utilities, or housing
 
-            Args:
+        Args:
         amount (float): The amount of money spent on necessary expense. 
         category (str): Description or category of the expense, such as "food," "electricity," or "housing."
     
-    Raises:
+        Raises:
         AssertionError: If amount is not a positive number or category is an empty string.
     """
