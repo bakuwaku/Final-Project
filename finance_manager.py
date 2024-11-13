@@ -36,6 +36,8 @@ def register_user(self):
         amount (float): Amount of money spent on desired expense.
         category (str): Description or category of the expense, such as entertainment or fast food 
         
+    Raises:
+        AssertionError: If amount is not a positive number or category is an empty string
         """
 
     
@@ -45,4 +47,7 @@ def register_user(self):
     Args:
         amount (float): The amount of money spent on necessary expense. 
         category (str): Description or category of the expense, such as "food," "electricity," or "housing."
+    
+    Raises:
+        AssertionError: If amount is not a positive number or category is an empty string.
     """
