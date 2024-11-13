@@ -37,7 +37,7 @@ def register_user(self):
         category (str): Description or category of the expense, such as entertainment or fast food 
         
     Raises:
-        AssertionError: If amount is not a positive number or category is an empty string
+        AssertionError: If amount is not a positive number or category is an empty string 
         """
 
     
