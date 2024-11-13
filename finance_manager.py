@@ -26,10 +26,10 @@ def register_user(self):
             savings (float): The user's total savings.
         """
     
-    def display_information(self):
+def display_information(self):
         """Displays the financial information of the user."""
         
-    def want_add_expenses(self, amount: float, category: str):
+def want_add_expenses(self, amount: float, category: str):
     """Adds expenses to a list of desired purchases. Used when the person wants to track things they intend to spend money on, such as a new iphone or a trip to Dunkin' Donuts.
 
     Args:
@@ -37,12 +37,11 @@ def register_user(self):
         category (str): Description or category of the expense, such as entertainment or fast food 
         
         """
-
     
-    def need_expenses
+def need_expenses
     """Adds essential expenses to a list of necessary spending. Used to track money spent on necessities, such as food, utilities, or housing.
 
-    Args:
+            Args:
         amount (float): The amount of money spent on necessary expense. 
         category (str): Description or category of the expense, such as "food," "electricity," or "housing."
     """
