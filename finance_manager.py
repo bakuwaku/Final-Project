@@ -2,7 +2,7 @@
 
 Driver/Navigator: Shelly Parra, 
 Assignment: Project
-Date: 11/11/2024
+Date: 11/12/2024
 
 Challenges Encountered: 
 """
@@ -71,3 +71,55 @@ def need_expenses
         Raises:
         AssertionError: If amount is not a positive number or category is an empty string.
     """
+
+
+def calculate_balance():
+    """ Calculates the balance after the expenses, the amount that exceeded the limit, and the amount
+    that remains.
+    
+    Attributes:
+        income (float): The user's yearly income.
+        savings (float): The user's total savings.
+        total_expenses (float): The amount of money the user spent during the month.
+        limit (int): The percent of money the user wants to spend.
+    
+    Returns:
+        balance_summary (str): A string with the remaining balance, exceeded spendings, available spendings, 
+        and the current amount in savings. 
+
+    """
+    # determine monthly income by dividing by 12
+    # make a variable for monthly income
+    
+    # To calculate remaining balance, monthly_income will get subtracted by total_expenses. If positive it will
+    # show as a float, otherwise it will remain as zero.
+    # To calculate exceeded spendings, remaining balance will be examened to determine if the float
+    # is positive or negative. If negative, then it will appear in exceeded spendings as a positive integer, 
+    # otherwise it will remain as zero.
+    # To calculate available spendings, if remaining balance has more than zero, then limit will be divided by 100.
+    # Then it will get multiplied by the decimal of limit. Otherwise, it will remain as zero.
+    # To calculate savings balance, savings will get subtracted by exceeded spendings, and get added by remaining
+    # balance minus available spendings.
+    # 1877.125 +  = 3266.565
+    
+    assert calculate_balance(22525.50, 568.97, 1389.44, 20) == """
+    Remaining Balance: 487.685
+    Exceeded Spendings: 0
+    Available Spendings: 97.537
+    Savings Balance: 959.118
+    """
+
+
+def main():
+    """ Run the class/instance, methods, functions.
+    
+    Side Effects:
+        This will call all the methods, functions, and instances. No return.
+
+    """
+
+if __name__ == "__main__":
+    """ Runs the main function.
+
+    """
+    main()
